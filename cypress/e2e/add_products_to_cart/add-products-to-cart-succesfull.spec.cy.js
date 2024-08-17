@@ -1,5 +1,5 @@
 describe('Add Products to Cart - Succesfull', () => {
-  beforeEach(() => {
+   beforeEach(() => {
     cy.fixture('users').then((users) => {
       cy.clearAllAndLogin(users.validUser.username, users.validUser.password)
     })
