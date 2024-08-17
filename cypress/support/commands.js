@@ -5,8 +5,8 @@ Cypress.Commands.add('clearAll', () => {
 })
 
 Cypress.Commands.add('clearAllAndLogin', (username, password) => {
-    cy.clearAllCookies()
-    cy.clearAllLocalStorage()
+    cy.clearCookies()
+    cy.clearLocalStorage()
     cy.visit('https://www.saucedemo.com/')
     cy.get('#user-name').type(username)
     cy.get('#password').type(password)

@@ -1,5 +1,6 @@
 describe('Sort Products by Name Z to A - Succesfull', () => {
    beforeEach(() => {
+
     cy.fixture('users').then((users) => {
       cy.clearAllAndLogin(users.validUser.username, users.validUser.password)
     })
@@ -12,6 +13,5 @@ describe('Sort Products by Name Z to A - Succesfull', () => {
           const sortedPrices = [...prices].sort((a, b) => b - a)
           expect(prices).to.deep.equal(sortedPrices)
         })
-
   })
 })
