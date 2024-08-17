@@ -1,4 +1,4 @@
-describe('Login Failure - Blocked Cases', () => {
+describe('Login Functionality - Blocked Cases', () => {
   beforeEach(() => {
     cy.fixture('users').then((users) => {
       cy.clearAllAndLogin(users.blockedUser.username, users.blockedUser.password)
