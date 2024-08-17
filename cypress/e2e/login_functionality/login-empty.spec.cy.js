@@ -1,4 +1,4 @@
-describe('Login Failure - Empty Cases', () => {
+describe('Login Functionality - Empty Cases', () => {
   beforeEach(() => {
     cy.visit('https://www.saucedemo.com/')
     cy.get('#login-button').click()
