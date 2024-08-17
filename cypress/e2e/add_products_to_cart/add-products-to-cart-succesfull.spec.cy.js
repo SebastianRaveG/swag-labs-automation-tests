@@ -14,4 +14,5 @@ describe('Add Products to Cart - Succesfull', () => {
     cy.get('.inventory_item_name').first().should('contain.text', 'Sauce Labs Backpack');
     cy.get('.inventory_item_name').last().should('contain.text', 'Sauce Labs Bike Light');
   })
+
 })
