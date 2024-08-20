@@ -6,7 +6,7 @@ describe('Login Functionality - Blocked Cases', () => {
   })
 
   it('Should show an error message with blocked credentials', () => {
-    cy.get('.error-message-container').should('be.visible')  // Asegúrate de usar el selector adecuado
+    cy.get('.error-message-container').should('be.visible')
   })
 
 })
