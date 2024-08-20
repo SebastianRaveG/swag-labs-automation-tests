@@ -9,5 +9,4 @@ describe('Login Functionality - Success Cases', () => {
   it('Should log in with valid credentials', () => {
     cy.url().should('include', '/inventory.html')
   })
-
 })
