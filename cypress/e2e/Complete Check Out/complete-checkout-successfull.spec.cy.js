@@ -17,7 +17,7 @@ describe('Login Functionality - Success Cases', () => {
     
     cy.get('.title').should('contain.text', 'Checkout: Your Information')
     
-    cy.get('#first-name').type('Usurio')
+    cy.get('#first-name').type('Usuario')
     cy.get('#last-name').type('Pruebas')
     cy.get('#postal-code').type(17001)
     cy.get('#continue').click()

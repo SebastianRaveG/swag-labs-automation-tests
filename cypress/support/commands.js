@@ -10,7 +10,7 @@ Cypress.Commands.add('clearAllAndLogin', (username, password) => {
     cy.visit('https://www.saucedemo.com/')
     cy.get('#user-name').type(username)
     cy.get('#password').type(password)
-    cy.screenshot('before-click');
+    // cy.screenshot('before-click');
     cy.get('#login-button').click()
-    cy.screenshot('after-click');
+    // cy.screenshot('after-click');
 })
