@@ -9,10 +9,15 @@ Cypress.Commands.add('clearAllAndLogin', (username, password) => {
     cy.clearLocalStorage()
     cy.visit('https://www.saucedemo.com/')
     cy.get('#user-name').type(username)
-    cy.wait(1000);
     cy.get('#password').type(password)
-    cy.wait(1000);
     cy.get('#login-button').click()
-    cy.wait(2000);
 
 })
+
+Cypress.Commands.add('setViewport', (size) => {
+    if (Cypress._.isArray(size)) {
+        cy.viewport(size[0], size[1]);
+    } else {
+        cy.viewport(size);
+    }
+});

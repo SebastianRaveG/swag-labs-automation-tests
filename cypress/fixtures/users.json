@@ -21,10 +21,14 @@
       "password": "secret_sauce"
     }
   ],
-
   "invalidUser": {
     "username": "invalid_user",
     "password": "wrong_password"
+  },
+
+  "emptyUser": {
+    "username": "",
+    "password": "secret_sauce"
   },
 
   "blockedUser": {
