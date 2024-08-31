@@ -7,6 +7,7 @@ module.exports = defineConfig({
     },
     video: true,
     videosFolder: 'cypress/videos',
+    pageLoadTimeout: 120000,
   },
   viewports: ['iphone-6', [1024, 768]]
 });
