@@ -5,7 +5,7 @@ describe('Login Functionality - Empty Cases', () => {
      })
 
   it('Should show an error message with Username is required', () => {
-    cy.get('.error-message-container').should('be.visible')  // Asegúrate de usar el selector adecuado
+    cy.get('.error-message-container').should('be.visible')
   })
 
 })
