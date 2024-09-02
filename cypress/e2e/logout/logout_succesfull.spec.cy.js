@@ -13,7 +13,7 @@ describe('Logout Functionality - Succesfull Cases', () => {
   viewports.forEach((size) => {
     Cypress._.each(['validUsers'], (userType) => {
 
-      it(`Should logout logged valid users in ${userType} on ${size} screen`, function () {
+      it(`Should logout logged valid users in ${userType} on ${size} screen`, () => {
         cy.setViewport(size);
         users[userType].forEach((user) => {
           cy.clearAllAndLogin(user.username, user.password);
@@ -23,6 +23,7 @@ describe('Logout Functionality - Succesfull Cases', () => {
           cy.get('#logout_sidebar_link').click();
           cy.log(`Testing logout for user: ${user.username}`);
           cy.url().should('include', '')
+          cy.get('.login_wrapper-inner')
 
         });
       });
